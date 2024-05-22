@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snakestyle.css">
+    <link rel="icon" type="image/x-icon" href="snake.ico">
+</head>
+
+<body>
+    <div class="home-container">
+        <h1 style="margin-top: 10%;">Snake Game for PC</h1>
+        <p>Best Score: <span id="bestScore">0</span></p>
+        <button class="sbutton" onclick="showDifficultyModal()">Play</button>
+    </div>
+    <div id="difficultyModal">
+        <h2 style="margin-top: 10%;">Choose Difficulty</h2>
+        <button class="sbutton" onclick="startGame('easy')">Easy</button>
+        <button class="sbutton" onclick="startGame('medium')">Medium</button>
+        <button class="sbutton" onclick="startGame('hard')">Hard</button>
+    </div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="gameContainer">
+        <div id="scoreContainer"
+            style="background-color: aquamarine; padding: 10px; display: inline-block;">
+
+            <span id="score" style="background-color: aquamarine;">Score: 0</span>
+            <span id="time" style="background-color: aquamarine;">Time: 0</span>
+        </div>
+        <button class="sbutton" id="pauseButton" onclick="togglePause()">Pause</button>
+    </div>
+
+    <div id="pauseModal">
+        <h2 style="margin-top: 10%;">Game Paused</h2>
+        <p>Score: <span id="pauseScore">0</span></p>
+        <p>Time: <span id="pauseTime">0</span></p>
+        <button class="sbutton" onclick="resumeGame()">Resume</button>
+        <button class="sbutton" onclick="leaveGame()">Leave</button>
+    </div>
+
+    <div id="gameOverModal">
+        <h2 style="margin-top: 10%;">Game Over</h2>
+        <p>Score: <span id="finalScore">0</span></p>
+        <p>Time: <span id="finalTime">0</span></p>
+        <button class="sbutton" onclick="restartGame()">Try Again</button>
+        <button class="sbutton" onclick="leaveGame()">Leave</button>
+    </div>
+
+
+    <script src="snakescript.js"></script>
+</body>
+
+</html>

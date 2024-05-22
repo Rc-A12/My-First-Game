@@ -1,0 +1,123 @@
+body {
+    background-attachment: fixed;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at center, transparent, rgba(7, 96, 212, 0.8));
+    background-image: url(sanke.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.home-container {
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 45%;
+    overflow: auto;
+    background-color: rgb(17, 177, 137);
+    border-radius: 25%;
+    margin: 0 auto;
+}
+
+
+#gameCanvas {
+    display: none;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border: 10px solid brown;
+    background-image: url(grass.jpg);
+    background-size: cover;
+
+}
+
+#gameContainer {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+
+    
+}
+
+#food {
+    background-color: black;
+}
+
+#pauseModal,
+#gameOverModal {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 25%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 45%;
+    overflow: auto;
+    background-color: rgb(17, 177, 137);
+}
+
+
+.difficultyModal:link, .difficultyModal:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.difficultyModal:hover,.difficultyModal:active {
+    background-color: green;
+    color: white;
+}
+
+#difficultyModal {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 25%;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 45%;
+    overflow: auto;
+    background-color: rgb(17, 177, 137);
+    margin: 0 auto;
+}
+
+.sbutton {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 15%;
+    margin: 10px;
+}
+
+.sbutton:hover,.sbutton:active {
+    background-color: green;
+    color: white;
+}
